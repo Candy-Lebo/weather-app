@@ -1,0 +1,72 @@
+body {
+  background: #e3e8eb;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+h1 {
+  color: white;
+  font-family: "Salsa", cursive;
+  font-weight: 700;
+  font-size: 35px;
+}
+.container {
+  border-radius: 12px;
+  background-image: url(../images/clouds.jpg);
+  background-size: cover;
+  margin: 60px auto;
+  padding: 25px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search-input {
+  border: none;
+  border-radius: 50px;
+  background: #e8f0fe;
+  font-size: 15px;
+  padding: 16px;
+  width: 80%;
+}
+.material-symbols-outlined {
+  border: none;
+  border-radius: 50px;
+  background-color: #e8f0fe;
+  bottom: -6px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px;
+  position: relative;
+  margin-left: 5px;
+}
+.weather-information {
+  display: flex;
+  justify-content: space-betwen;
+  margin-bottom: -12px;
+}
+.current-temperature {
+  font-size: 35px;
+  margin-top: 15px;
+}
+.cloudy-weather-icon {
+  font-size: 40px;
+  position: relative;
+  top: -1px;
+  margin-right: -4px;
+}
+.temperature {
+  font-size: 65px;
+  font-weight: bold;
+}
+.degrees {
+  font-size: 28px;
+  position: relative;
+  top: -28px;
+}
+strong {
+  color: black;
+  font-weight: 500;
+}
+a {
+  color: black;
+}
