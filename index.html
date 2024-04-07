@@ -1,1 +1,73 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lemon&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lemon&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form action="/submit">
+          <span>
+            <input
+              id="searchText"
+              type="text"
+              placeholder="Enter a city.."
+              class="search-input"
+            />
+            <button
+              type="button"
+              onclick="changeCity()"
+              class="material-symbols-outlined"
+            >
+              Search
+            </button>
+          </span>
+        </form>
+      </header>
+      <div class="weather-information">
+        <div>
+          <h1 id="header">Sandton City</h1>
+          <p>
+            <span id="dateAndTime"></span>, 0mm precipitation
+            <br />
+            Humidity: <strong>42%</strong>, wind: <strong>8km/h</strong> in the
+            <br />last 24 hour
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="cloudy-weather-icon">☁️</span>
+          <span id="temperature" class="temperature">30</span>
+          <span class="degrees">&deg;C</span>
+        </div>
+      </div>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Candy-Lebo">Candy Mothibe</a>
+          and is on <a href="">Git Hub</a> and hosted on <a href="">Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/styles.js"></script>
+  </body>
+</html>
